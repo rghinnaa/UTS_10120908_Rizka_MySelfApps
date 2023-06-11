@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:contentDescription="@string/cd_home"
+        android:icon="@drawable/slr_home_navigation"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/activity"
+        android:contentDescription="@string/cd_daily_activity"
+        android:icon="@drawable/slr_activity_navigation"
+        android:title="@string/daily_activity" />
+
+    <item
+        android:id="@+id/gallery"
+        android:contentDescription="@string/cd_gallery"
+        android:icon="@drawable/slr_gallery_navigation"
+        android:title="@string/gallery" />
+
+    <item
+        android:id="@+id/music"
+        android:contentDescription="@string/cd_profile"
+        android:icon="@drawable/slr_music_navigation"
+        android:title="@string/music" />
+
+    <item
+        android:id="@+id/profile"
+        android:contentDescription="@string/cd_profile"
+        android:icon="@drawable/slr_profile_navigation"
+        android:title="@string/profile" />
+
+</menu>

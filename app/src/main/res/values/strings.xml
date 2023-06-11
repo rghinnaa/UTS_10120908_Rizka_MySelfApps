@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">RGApp</string>
+    <string name="my_name">Rizka Ghinna Auliya</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="previous">Back</string>
+    <string name="start">Start</string>
+    <string name="cd_home">Home</string>
+    <string name="cd_daily_activity">Daily Activity</string>
+    <string name="cd_gallery">Gallery</string>
+    <string name="cd_music">Music</string>
+    <string name="cd_profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="daily_activity">Daily Activity</string>
+    <string name="gallery">Gallery</string>
+    <string name="music">Music</string>
+    <string name="profile">Profile</string>
+    <string name="greetings">Hi! Welcome to My Profile</string>
+    <string name="description">Hi! My name is Rizka Ghinna Auliya, you can call me Rizka or Ghinna, but usually my friends call me Ghinna. I\'m 21 years old but in a few days i\'ll be 22 years old LOL. I lived in Cimahi and I\'m the only child in my family. I\'m an Android Developer with 3 years experienced. I\'m also a student in UNIKOM at 6th semester. And you can read about me more through this app. Enjoy!</string>
+    <string name="hi">Hi!</string>
+    <string name="welcome">Welcome to</string>
+    <string name="my_profile">My Profile</string>
+    <string name="name_desc">My name is Rizka Ghinna Auliya, usually people call me Rizka or Ghinna. but my family call me Kika 🥰</string>
+    <string name="born_desc">I was born in Cimahi on 29th June, 2001. Now I\'m 21 years old but soon i\'ll be 22 yeayy 🥳 also I\'m the only child in my family 👨‍👩‍👧</string>
+    <string name="job_desc">I\'m an Android Developer in Native Kotlin with 3 years experienced. My speciality programming languages are Java and Kotlin. Now I\'m working at PT Cicil Solusi Mitra Technology as an Android Developer.</string>
+    <string name="college_desc">Beside my work, I\'m also a college student in Informatics Engineering at Universitas Komputer Indonesia and now I\'m in 6th semester.</string>
+    <string name="favorite_drink">Drink</string>
+    <string name="favorite_food">Food</string>
+    <string name="hobby">Hobby</string>
+    <string name="interest">Interest</string>
+    <string name="goal">Goals</string>
+    <string name="my_hobbies">My Hobbies</string>
+    <string name="my_foods">My Favorite Foods</string>
+    <string name="my_drinks">My Favorite Drinks</string>
+    <string name="my_interest">What I\'m Interest in</string>
+    <string name="my_goals">My Goals</string>
+    <string name="username">rghinnaa</string>
+    <string name="my_friend">My\nFriends</string>
+    <string name="genre">G\nE\nN\nR\nE\nS</string>
+    <string name="contact_me">Contact Me</string>
+    <string name="find_me">Find Me</string>
+    <string name="about_app">About App</string>
+    <string name="nim_class">10120908 | IF-10</string>
+    <string name="version">Version 1.0.0</string>
+    <string name="by">by</string>
+    <string name="NIM">10120908</string>
+    <string name="class_name">IF-10</string>
+    <string name="by_me">By</string>
+    <string name="welcome_to_my_self_app">Welcome\nto\nMy Self Apps</string>
+    <string name="wanna_know_me">This app will bring you closer to me</string>
+    <string name="be_prepared">Be prepared\nand\nenjoy the experience</string>
+
+    <string-array name="music_video_title">
+        <item>Music</item>
+        <item>Video</item>
+    </string-array>
+</resources>

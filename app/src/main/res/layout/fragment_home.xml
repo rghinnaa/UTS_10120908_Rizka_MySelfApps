@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/vBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_margin"
+            android:background="@drawable/bg_home"
+            app:layout_constraintBottom_toBottomOf="@id/vBorder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvHi"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:gravity="end"
+            android:text="@string/hi"
+            android:textAppearance="@style/TextAppearance.Orange.Bold.Headline3"
+            android:textColor="@color/spicy_pink"
+            app:layout_constraintBottom_toTopOf="@+id/tvWelcome"
+            app:layout_constraintEnd_toStartOf="@id/ivBorder"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivBorder" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:gravity="end"
+            android:text="@string/welcome"
+            android:textAppearance="@style/TextAppearance.Orange.Bold.Headline5"
+            android:textColor="@color/spicy_pink"
+            app:layout_constraintBottom_toTopOf="@+id/tvMyProfile"
+            app:layout_constraintEnd_toStartOf="@id/ivBorder"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHi" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvMyProfile"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:gravity="end"
+            android:text="@string/my_profile"
+            android:textAppearance="@style/TextAppearance.Orange.Bold.Headline4"
+            android:textColor="@color/spicy_pink"
+            app:layout_constraintBottom_toTopOf="@+id/vBackground"
+            app:layout_constraintEnd_toStartOf="@id/ivBorder"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:padding="@dimen/large_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_profile"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+        <ImageView
+            android:id="@+id/ivBorder"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:src="@drawable/img_profile_border"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvHobby"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:background="@drawable/bg_circle"
+            android:drawableTop="@drawable/ic_hobby"
+            android:drawableTint="@color/white"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/normal_margin"
+            android:text="@string/hobby"
+            android:textAppearance="@style/TextAppearance.Roboto.Regular.Overline"
+            android:textColor="@color/white"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/tvFood"
+            app:layout_constraintTop_toBottomOf="@id/ivBorder"
+            app:textAllCaps="false" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvFood"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:background="@drawable/bg_circle"
+            android:drawableTop="@drawable/ic_food"
+            android:drawableTint="@color/white"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/normal_margin"
+            android:text="@string/favorite_food"
+            android:textAppearance="@style/TextAppearance.Roboto.Regular.Overline"
+            android:textColor="@color/white"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/tvDrink"
+            app:layout_constraintTop_toBottomOf="@id/ivBorder"
+            app:textAllCaps="false" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDrink"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:background="@drawable/bg_circle"
+            android:drawableTop="@drawable/ic_drink"
+            android:drawableTint="@color/white"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/normal_margin"
+            android:text="@string/favorite_drink"
+            android:textAppearance="@style/TextAppearance.Roboto.Regular.Overline"
+            android:textColor="@color/white"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivBorder"
+            app:textAllCaps="false" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvInterest"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:background="@drawable/bg_circle"
+            android:drawableTop="@drawable/ic_interest"
+            android:drawableTint="@color/white"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/normal_margin"
+            android:text="@string/interest"
+            android:textAppearance="@style/TextAppearance.Roboto.Regular.Overline"
+            android:textColor="@color/white"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@id/tvDrink"
+            app:layout_constraintTop_toBottomOf="@id/ivBorder"
+            app:textAllCaps="false" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvGoals"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:background="@drawable/bg_circle"
+            android:drawableTop="@drawable/ic_goal"
+            android:drawableTint="@color/white"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/normal_margin"
+            android:text="@string/goal"
+            android:textAppearance="@style/TextAppearance.Roboto.Regular.Overline"
+            android:textColor="@color/white"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@id/tvInterest"
+            app:layout_constraintTop_toBottomOf="@id/ivBorder"
+            app:textAllCaps="false" />
+
+        <View
+            android:id="@+id/vBorder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_margin"
+            app:layout_constraintTop_toBottomOf="@id/tvDrink"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivMe1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_me_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vBackground"
+            app:shapeAppearanceOverlay="@style/roundedCornerImageView" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivMe2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_75sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:adjustViewBounds="true"
+            android:rotation="15"
+            android:src="@drawable/img_me_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vBackground"
+            app:shapeAppearanceOverlay="@style/roundedCornerImageView" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvName"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="@dimen/zero_margin"
+            android:layout_marginStart="@dimen/large_margin"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            app:cardBackgroundColor="@color/wafer"
+            app:cardCornerRadius="@dimen/medium_margin"
+            app:cardElevation="@dimen/zero_margin"
+            app:layout_constraintBottom_toBottomOf="@id/ivMe2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivMe2"
+            app:layout_constraintTop_toBottomOf="@id/vBackground">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/screen_margin"
+                android:justificationMode="inter_word"
+                android:text="@string/name_desc"
+                android:textAppearance="@style/TextAppearance.Roboto.Regular.Caption" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivMeBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_me_birthday"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivMe2"
+            app:shapeAppearanceOverlay="@style/roundedCornerImageView" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvBorn"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="@dimen/zero_margin"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            app:cardBackgroundColor="@color/wafer"
+            app:cardCornerRadius="@dimen/medium_margin"
+            app:cardElevation="@dimen/zero_margin"
+            app:layout_constraintBottom_toBottomOf="@id/ivMeBirthday"
+            app:layout_constraintEnd_toStartOf="@id/ivMeBirthday"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivMe2">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvBorn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/screen_margin"
+                android:justificationMode="inter_word"
+                android:text="@string/born_desc"
+                android:textAppearance="@style/TextAppearance.Roboto.Regular.Caption" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivMeJob"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_me_job"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivMeBirthday"
+            app:shapeAppearanceOverlay="@style/roundedCornerImageView" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvJob"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="@dimen/zero_margin"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            app:cardBackgroundColor="@color/wafer"
+            app:cardCornerRadius="@dimen/medium_margin"
+            app:cardElevation="@dimen/zero_margin"
+            app:layout_constraintBottom_toBottomOf="@id/ivMeJob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivMeJob"
+            app:layout_constraintTop_toBottomOf="@id/ivMeBirthday">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/screen_margin"
+                android:justificationMode="inter_word"
+                android:text="@string/job_desc"
+                android:textAppearance="@style/TextAppearance.Roboto.Regular.Caption" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivCollege"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/large_margin"
+            android:layout_marginEnd="@dimen/screen_margin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_me_college"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvJob"
+            app:shapeAppearanceOverlay="@style/roundedCornerImageView" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivCollege2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_75sdp"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:adjustViewBounds="true"
+            android:rotation="345"
+            android:src="@drawable/img_me_college_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvJob"
+            app:shapeAppearanceOverlay="@style/roundedCornerImageView" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvCollege"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="@dimen/zero_margin"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginEnd="@dimen/large_margin"
+            android:layout_marginBottom="@dimen/screen_margin"
+            app:cardBackgroundColor="@color/wafer"
+            app:cardCornerRadius="@dimen/medium_margin"
+            app:cardElevation="@dimen/zero_margin"
+            app:layout_constraintBaseline_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/ivCollege2"
+            app:layout_constraintEnd_toStartOf="@id/ivCollege2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvJob">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvCollege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/screen_margin"
+                android:justificationMode="inter_word"
+                android:text="@string/college_desc"
+                android:textAppearance="@style/TextAppearance.Roboto.Regular.Caption" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity"
+    app:startDestination="@id/daily_activity_fragment">
+
+    <fragment
+        android:id="@+id/daily_activity_fragment"
+        android:name="com.akb.uts10120908.ui.daily_activity.DailyActivityFragment"
+        android:label="Daily Activity"
+        tools:layout="@layout/fragment_daily_activity">
+
+    </fragment>
+
+</navigation>
